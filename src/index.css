@@ -1,1 +1,121 @@
-@import "tailwindcss";
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f8f9fc;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white;
+  padding: 16px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+/* BANNER */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.banner h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.banner p {
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.btn-outline {
+  border: 1px solid #6a11cb;
+  color: #6a11cb;
+}
+
+/* STATS */
+.stats {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  border-radius: 10px;
+}
+
+/* PRODUCTS */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* TAG */
+.tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* BUTTON */
+button {
+  cursor: pointer;
+}
+
+/* CART */
+.cart {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 60%;
+  margin: auto;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+/* STEPS */
+.steps div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* PRICING */
+.pricing div {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #0b132b;
+  color: white;
+  padding: 40px;
+}

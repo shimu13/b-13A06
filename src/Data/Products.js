@@ -1,0 +1,35 @@
+export const productsData = [
+  {
+    id: 1,
+    name: "Resume Builder",
+    description: "Create professional resumes",
+    price: 19,
+    period: "monthly",
+    tag: "Popular",
+    tagType: "popular",
+    features: ["100+ templates", "ATS optimization"],
+    icon: "📄",
+  },
+  {
+    id: 2,
+    name: "Portfolio Maker",
+    description: "Build portfolio easily",
+    price: 49,
+    period: "yearly",
+    tag: "New",
+    tagType: "new",
+    features: ["Custom domain", "SEO friendly"],
+    icon: "🌐",
+  },
+  {
+    id: 3,
+    name: "AI Cover Letter",
+    description: "Generate letters instantly",
+    price: 9,
+    period: "monthly",
+    tag: "Best Seller",
+    tagType: "best",
+    features: ["AI writing", "Fast export"],
+    icon: "✉️",
+  }
+];
