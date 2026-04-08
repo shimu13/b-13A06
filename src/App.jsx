@@ -6,7 +6,9 @@ import Cart from "./Components/Cart";
 import { productsData } from "./Data/products";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Stats from "./Components/Stats";
 
+<Stats />
 export default function App() {
 
   const [cart, setCart] = useState([]);

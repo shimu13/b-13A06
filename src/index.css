@@ -8,34 +8,115 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 60px;
   background: white;
-  align-items: center;
+  border-bottom: 1px solid #eee;
 }
 
-.navbar h1 {
-  color: #6c2bd9;
-  font-weight: bold;
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
+
+.logo h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #6c2bd9;
+}
+
+.logo-icon {
+  font-size: 22px;
+}
+
+/* MENU */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+  color: #555;
+  font-weight: 500;
+}
+
+.nav-links li:hover {
+  color: #6c2bd9;
+}
+
+/* RIGHT SIDE */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart {
+  background: #f3f4f6;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  background: linear-gradient(90deg, #6c2bd9, #9333ea);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
 
 /* BANNER */
 .banner {
   display: flex;
   justify-content: space-between;
-  padding: 60px;
   align-items: center;
+  padding: 60px 80px;
 }
 
-.banner h1 {
-  font-size: 42px;
+/* LEFT */
+.banner-text {
+  max-width: 500px;
+}
+
+.banner-text h1 {
+  font-size: 44px;
   font-weight: 700;
+  line-height: 1.2;
 }
 
-.banner p {
+.banner-text .desc {
   color: #666;
-  margin: 15px 0;
+  margin: 15px 0 25px;
 }
 
+/* BADGE */
+.badge {
+  display: inline-block;
+  background: #ede9fe;
+  color: #6c2bd9;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* BUTTON GROUP */
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* IMAGE */
+.banner-img img {
+  width: 400px;
+  border-radius: 12px;
+}
 /* BUTTONS */
 .btn-primary {
   background: linear-gradient(90deg, #6c2bd9, #9333ea);
