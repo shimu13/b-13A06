@@ -3,7 +3,9 @@ import Navbar from "./Components/Navbar";
 import Banner from "./Components/Banner";
 import ProductCard from "./Components/ProductCard";
 import Cart from "./Components/Cart";
+import Pricing from "./Components/Pricing";
 import Stats from "./Components/Stats";
+import CTA from "./Components/CTA";
 import Footer from "./Components/Footer";
 import { FaFacebook, FaTwitter, FaLinkedin, FaGlobe } from "react-icons/fa";
 import { productsData } from "./Data/products";
@@ -82,6 +84,8 @@ export default function App() {
 
       {/* TOAST */}
       <ToastContainer position="top-right" autoClose={1500} />
+      <Pricing />
+      <CTA />
 
       {/* FOOTER */}
       <Footer 

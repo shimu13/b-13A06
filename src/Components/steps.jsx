@@ -1,18 +1,43 @@
 export default function Steps() {
   const steps = [
-    { icon: "📝", title: "Create Account", desc: "Sign up quickly" },
-    { icon: "🛒", title: "Choose Products", desc: "Select the tools you need" },
-    { icon: "🚀", title: "Start Creating", desc: "Use tools efficiently" },
+    {
+      icon: "📝",
+      title: "Create Account",
+      desc: "Sign up in seconds and get started instantly",
+    },
+    {
+      icon: "🛒",
+      title: "Choose Tools",
+      desc: "Browse and select the tools you need",
+    },
+    {
+      icon: "🚀",
+      title: "Start Creating",
+      desc: "Boost your workflow with powerful tools",
+    },
   ];
+
   return (
-    <section className="steps grid md:grid-cols-3 gap-5 my-10">
-      {steps.map((s, i) => (
-        <div key={i} className="p-5 border rounded-xl text-center shadow-md">
-          <div className="text-4xl mb-3">{s.icon}</div>
-          <h3 className="font-bold mb-2">{s.title}</h3>
-          <p className="text-gray-600">{s.desc}</p>
-        </div>
-      ))}
+    <section className="steps-section">
+
+      {/* TITLE */}
+      <h2 className="steps-title">How It Works</h2>
+
+      {/* CARDS */}
+      <div className="steps-container">
+        {steps.map((step, i) => (
+          <div key={i} className="step-card">
+
+            <div className="step-icon">{step.icon}</div>
+
+            <h3>{step.title}</h3>
+
+            <p>{step.desc}</p>
+
+          </div>
+        ))}
+      </div>
+
     </section>
   );
 }

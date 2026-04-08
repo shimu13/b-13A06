@@ -165,7 +165,145 @@ body {
 .card:hover {
   transform: translateY(-5px);
 }
+/* SECTION */
+.steps-section {
+  padding: 60px 80px;
+  text-align: center;
+}
 
+/* TITLE */
+.steps-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* CONTAINER */
+.steps-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.step-card {
+  background: white;
+  padding: 30px;
+  width: 280px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ICON */
+.step-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.step-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  color: #666;
+  font-size: 14px;
+}
+/* SECTION */
+.pricing-section {
+  padding: 60px 80px;
+  text-align: center;
+}
+
+/* TITLE */
+.pricing-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* CONTAINER */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.pricing-card {
+  background: white;
+  padding: 30px;
+  width: 280px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  position: relative;
+  transition: 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ACTIVE (Middle Card) */
+.pricing-card.active {
+  border: 2px solid #6c2bd9;
+  transform: scale(1.05);
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background: #6c2bd9;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+/* PRICE */
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* DESC */
+.desc {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* LIST */
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-card li {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.pricing-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #6c2bd9, #9333ea);
+  color: white;
+}
 /* TAG */
 .tag {
   position: absolute;
@@ -188,26 +326,146 @@ body {
   margin-top: 10px;
 }
 
-/* CART */
-.cart {
-  background: white;
+/* SECTION */
+.cart-section {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+/* BOX */
+.cart-box {
   width: 600px;
-  margin: 50px auto;
+  background: white;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-.cart h2 {
   text-align: center;
 }
 
+/* TITLE */
+.cart-box h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* LIST */
+.cart-list {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* ITEM */
 .cart-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 0;
+  border-bottom: 1px solid #eee;
 }
 
+/* LEFT */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+/* RIGHT */
+.right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.right button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+/* TOTAL */
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.checkout-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #6c2bd9, #9333ea);
+  color: white;
+}
+
+/* EMPTY */
+.empty {
+  color: #999;
+}
+/* CTA SECTION */
+.cta-section {
+  margin-top: 60px;
+  padding: 60px 20px;
+  background: linear-gradient(90deg, #6c2bd9, #9333ea);
+  text-align: center;
+  color: white;
+}
+
+/* CONTENT */
+.cta-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cta-content p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* PRIMARY */
+.cta-primary {
+  background: white;
+  color: #6c2bd9;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* OUTLINE */
+.cta-outline {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
 /* FOOTER */
 .footer {
   background: linear-gradient(90deg, #6c2bd9, #9333ea);
