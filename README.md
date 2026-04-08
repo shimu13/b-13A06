@@ -14,3 +14,41 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+
+
+
+# 🚀 DigiTools Platform
+
+A modern digital tools platform built with React.js where users can explore tools, add them to cart, and manage purchases easily.
+
+---
+
+## ✨ Features
+
+- 🧭 Responsive Navbar with cart count
+- 🎯 Beautiful Banner section
+- 📊 Stats section (Figma styled)
+- 🃏 Product cards with tags & features
+- 🛒 Add to cart & remove functionality
+- 🔄 Toggle between Products & Cart
+- 🔔 Toast notifications (React Toastify)
+- 💰 Pricing section
+- 🪜 Steps section
+- 🦶 Professional Footer with social icons
+
+---
+
+## ⚙️ Technologies Used
+
+- React.js
+- JavaScript (ES6+)
+- CSS (Custom + Tailwind optional)
+- React-Toastify
+- React Icons
+
+---
+
+## 📦 Project Structure
