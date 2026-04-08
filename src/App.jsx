@@ -3,12 +3,13 @@ import Navbar from "./Components/Navbar";
 import Banner from "./Components/Banner";
 import ProductCard from "./Components/ProductCard";
 import Cart from "./Components/Cart";
+import Stats from "./Components/Stats";
+import Footer from "./Components/Footer";
+import { FaFacebook, FaTwitter, FaLinkedin, FaGlobe } from "react-icons/fa";
 import { productsData } from "./Data/products";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Stats from "./Components/Stats";
 
-<Stats />
 export default function App() {
 
   const [cart, setCart] = useState([]);
@@ -32,14 +33,32 @@ export default function App() {
   return (
     <div>
 
+      {/* NAVBAR */}
       <Navbar cartCount={cart.length} />
+
+      {/* BANNER */}
       <Banner />
 
+      {/* 🔥 STATS (Correct place) */}
+      <Stats />
+
+      {/* TITLE */}
+      <h2 style={{ textAlign: "center", marginTop: "40px" }}>
+        Premium Digital Tools
+      </h2>
+
+      {/* TOGGLE BUTTON */}
       <div style={{ textAlign: "center", margin: "30px" }}>
-        <button onClick={() => setView("products")}>Products</button>
-        <button onClick={() => setView("cart")}>Cart</button>
+        <button className="btn-primary" onClick={() => setView("products")}>
+          Products
+        </button>
+
+        <button className="btn-outline" onClick={() => setView("cart")}>
+          Cart
+        </button>
       </div>
 
+      {/* PRODUCTS */}
       {view === "products" && (
         <div className="products-grid">
           {productsData.map(product => (
@@ -52,6 +71,7 @@ export default function App() {
         </div>
       )}
 
+      {/* CART */}
       {view === "cart" && (
         <Cart
           cart={cart}
@@ -60,7 +80,13 @@ export default function App() {
         />
       )}
 
-      <ToastContainer />
+      {/* TOAST */}
+      <ToastContainer position="top-right" autoClose={1500} />
+
+      {/* FOOTER */}
+      <Footer 
+      
+      />
 
     </div>
   );
