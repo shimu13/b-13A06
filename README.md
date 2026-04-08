@@ -52,3 +52,9 @@ A modern digital tools platform built with React.js where users can explore tool
 ---
 
 ## 📦 Project Structure
+src/
+├── Components/
+├── Data/
+├── App.jsx
+├── main.jsx
+└── index.css
