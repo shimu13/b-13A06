@@ -13,40 +13,46 @@ export default function Footer() {
             All-in-one platform for digital tools to boost your workflow
           </p>
 
-          {/* 🔥 SOCIAL ICONS */}
+          {/* SOCIAL ICONS */}
           <div className="social-icons">
-            <FaGlobe />
-            <FaTwitter />
-            <FaFacebook />
-            <FaLinkedin />
+            <span><FaGlobe /></span>
+            <span><FaTwitter /></span>
+            <span><FaFacebook /></span>
+            <span><FaLinkedin /></span>
           </div>
         </div>
 
         {/* LINKS */}
         <div className="footer-links">
+
           <div>
             <h4>Product</h4>
             <p>Features</p>
             <p>Pricing</p>
+            <p>Integrations</p>
           </div>
 
           <div>
             <h4>Company</h4>
             <p>About</p>
             <p>Careers</p>
+            <p>Blog</p>
           </div>
 
           <div>
             <h4>Support</h4>
-            <p>Help</p>
+            <p>Help Center</p>
             <p>Contact</p>
+            <p>Privacy Policy</p>
           </div>
+
         </div>
 
       </div>
 
+      {/* BOTTOM */}
       <div className="footer-bottom">
-        <p>© 2026 DigiTools</p>
+        <p>© 2026 DigiTools. All rights reserved.</p>
       </div>
 
     </footer>
